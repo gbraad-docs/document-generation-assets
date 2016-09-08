@@ -1,5 +1,5 @@
-Document generation templates
-=============================
+Document generation assets
+==========================
 
 Styles and templates used for document generation with docugen.
 
