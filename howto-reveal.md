@@ -1,0 +1,21 @@
+How to generate Reveal slides
+=============================
+
+`.gitlab-ci.yml`
+```
+pages:
+  image: registry.gitlab.com/gbraad/docugen:latest
+  script:
+    - git clone https://gitlab.com/gbraad/document-generation-assets.git assets --depth 1
+    - mkdir public
+    - cp -r assets/public-content/reveal/* public/
+    - pandoc -t html5 --template assets/templates/reveal-slides-template.html --standalone --section-divs ./index.md -o ./public/index.html
+    - pandoc -t html5 --template assets/templates/reveal-slides-template.html --standalone --section-divs ./slides.md -o ./public/slides.html
+    - pandoc -V geometry:margin=1in ./slides.md -o ./public/slides.pdf
+    - cp -r img public/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+```

@@ -1,9 +1,17 @@
 Document generation assets
 ==========================
 
-Styles and templates used for document generation with docugen.
+Styles and templates used for document and presentation generation with docugen.
 
-Used by blog-content, openstack-handsonlabs, etc
+Used by blog-content, openstack-handsonlabs, tools-training, etc
+
+
+Usage
+-----
+Instructions on how to use for different use-cases:
+
+  * [Reveal](howto-reveal.md) slides
+  * [Articles](howto-articles.md) generation
 
 
 Authors
