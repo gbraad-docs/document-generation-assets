@@ -8,10 +8,8 @@ Used by blog-content, openstack-handsonlabs, tools-training, etc
 
 Usage
 -----
-Instructions on how to use for different use-cases:
 
-  * [Reveal](howto-reveal.md) slides
-  * [Articles](howto-articles.md) generation
+[Instructions](SUMMARY.md) on how to use for different use-cases.
 
 
 Authors

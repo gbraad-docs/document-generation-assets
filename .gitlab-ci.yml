@@ -1,0 +1,21 @@
+stages:
+  - build
+  - deploy
+
+build_page:
+  image: registry.gitlab.com/gbraad/gitbook-server:3.2.0
+  stage: build
+  script:
+    - gitbook build
+    - mv _book public
+  artifacts:
+    paths:
+      - public
+
+pages:
+  stage: deploy
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
