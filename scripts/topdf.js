@@ -16,6 +16,11 @@ page.open(address, function (status) {
         phantom.exit(1);
     } else {
         window.setTimeout(function () {
+            var zoom = page.zoomFactor;
+            page.evaluate(function(zoom) {
+                return document.querySelector('body').style.zoom = zoom;
+            }, zoom);
+
             page.render(output);
             phantom.exit();
         }, 200);
