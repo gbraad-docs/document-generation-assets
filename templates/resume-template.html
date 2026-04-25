@@ -93,6 +93,12 @@
                 color: var(--text-secondary);
             }
 
+            .resume-content img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+
             .resume-content figure {
                 width: 140px;
                 float: right;
@@ -100,10 +106,17 @@
                 padding: 6px;
                 border: 1px solid var(--border);
                 background: var(--bg-tertiary);
+                overflow: hidden;
             }
 
             .resume-content figcaption {
                 display: none;
+            }
+
+            .resume-content::after {
+                content: '';
+                display: table;
+                clear: both;
             }
 
             @media print {
