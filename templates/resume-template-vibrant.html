@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gerard Braad - Resume</title>
+    <meta name="description" content="Gerard Braad - Resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+/* Vibrant Modern Resume Theme - Colorful & Eye-catching */
+
+:root {
+    /* Colors matching website theme */
+    --bg-primary: #f5f5f5;
+    --bg-secondary: #ffffff;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-light: #888888;
+    --accent-orange: #ff8c00;
+    --accent-blue: #0f93f9;
+    --accent-orange-light: #ffa630;
+    --accent-blue-light: #4dabf9;
+    --border-color: #e0e0e0;
+
+    /* New vibrant additions - NO GRADIENTS */
+    --section-bg-orange: #fff5e6;
+    --section-bg-blue: #e6f4ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--bg-primary);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    padding: 20px 0;
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+}
+
+#main-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-secondary);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+@media print {
+    #main-wrapper {
+        box-shadow: none;
+        max-width: 100%;
+    }
+}
+
+/* Header Section - Full-width colored banner */
+section#gerard-braad {
+    background: var(--accent-blue);
+    color: white;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    page-break-before: avoid;
+}
+
+@media print {
+    section#gerard-braad {
+        background: var(--accent-blue) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+section#gerard-braad h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 15px 0;
+    text-transform: none;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section#gerard-braad p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 16px;
+    margin: 8px 0;
+    line-height: 1.8;
+}
+
+section#gerard-braad a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent-orange);
+    padding-bottom: 2px;
+    transition: border-color 0.3s;
+}
+
+section#gerard-braad a:hover {
+    border-bottom-color: white;
+}
+
+/* Photo - circular with colored border */
+figure {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 20px auto;
+    position: relative;
+}
+
+@media print {
+    figure {
+        border: 4px solid white;
+    }
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    display: none;
+}
+
+/* Main content area */
+#main-wrapper > *:not(section#gerard-braad) {
+    padding: 0 40px;
+}
+
+@media print {
+    #main-wrapper > *:not(section#gerard-braad) {
+        padding: 0 20px;
+    }
+}
+
+/* Section Headings - Alternating colored backgrounds */
+h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    margin: 0 -40px 20px -40px;
+    padding: 15px 40px;
+    background: var(--accent-orange);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    margin-top: 35px;
+}
+
+@media print {
+    h2 {
+        margin: 25px -20px 15px -20px;
+        padding: 12px 20px;
+        background: var(--accent-orange) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+/* Alternate blue backgrounds for even sections */
+section:nth-of-type(even) h2 {
+    background: var(--accent-blue);
+}
+
+@media print {
+    section:nth-of-type(even) h2 {
+        background: var(--accent-blue) !important;
+    }
+}
+
+/* First h2 after header */
+section#gerard-braad + section h2 {
+    margin-top: 35px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent-blue);
+    margin: 25px 0 10px 0;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--accent-orange);
+    display: inline-block;
+}
+
+h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--accent-orange);
+    margin: 18px 0 10px 0;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 14px 0 8px 0;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 12px 0 6px 0;
+}
+
+/* Links */
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: var(--accent-orange);
+    border-bottom-color: var(--accent-orange);
+}
+
+/* Paragraphs */
+p {
+    margin: 12px 0;
+    line-height: 1.7;
+}
+
+/* Lists */
+ul, ol {
+    margin: 15px 0;
+    padding-left: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    padding-left: 25px;
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
+ul li:before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    color: var(--accent-orange);
+    font-weight: bold;
+    font-size: 18px;
+    top: -2px;
+}
+
+ol {
+    padding-left: 25px;
+}
+
+ol li {
+    margin: 10px 0;
+}
+
+/* Strong/Bold */
+strong, b {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Emphasis */
+em, i {
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* Code */
+code, tt {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    background: var(--section-bg-orange);
+    color: var(--accent-orange);
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid #ffd699;
+}
+
+pre {
+    background: var(--bg-primary);
+    border: 2px solid var(--accent-blue);
+    border-radius: 6px;
+    padding: 15px;
+    overflow-x: auto;
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+pre code {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: var(--text-primary);
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 5px solid var(--accent-blue);
+    padding: 15px 25px;
+    margin: 20px 0;
+    background: var(--section-bg-blue);
+    color: var(--text-secondary);
+    font-style: italic;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th {
+    background: var(--accent-blue);
+    color: white;
+    font-weight: 700;
+    padding: 12px;
+    text-align: left;
+}
+
+@media print {
+    table th {
+        background: var(--accent-blue) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+table td {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+}
+
+table tr:nth-child(even) {
+    background: var(--bg-primary);
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    border-top: 3px solid var(--accent-orange);
+    margin: 30px 0;
+}
+
+/* Skills Section - Colorful gradient boxes */
+section#skills ul,
+section#technical-skills ul,
+section#core-competencies ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+}
+
+section#skills ul li,
+section#technical-skills ul li,
+section#core-competencies ul li {
+    background: var(--accent-orange);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(255, 140, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+@media print {
+    section#skills ul li,
+    section#technical-skills ul li,
+    section#core-competencies ul li {
+        background: var(--accent-orange) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        box-shadow: none;
+    }
+}
+
+section#skills ul li:before,
+section#technical-skills ul li:before,
+section#core-competencies ul li:before {
+    display: none;
+}
+
+@media (hover: hover) {
+    section#skills ul li:hover,
+    section#technical-skills ul li:hover,
+    section#core-competencies ul li:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+    }
+}
+
+/* Achievements - Blue gradient boxes */
+section#key-achievements ul li,
+section#achievements ul li {
+    background: var(--section-bg-blue);
+    padding: 15px 20px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent-blue);
+    box-shadow: 0 2px 8px rgba(15, 147, 249, 0.15);
+    position: relative;
+}
+
+section#key-achievements ul li:before,
+section#achievements ul li:before {
+    color: var(--accent-blue);
+    font-size: 20px;
+    top: 13px;
+}
+
+/* Employment History - Enhanced job entries */
+section#employment-history h3 {
+    margin-top: 30px;
+    background: var(--section-bg-orange);
+    padding: 12px 20px;
+    border-radius: 8px;
+    border-bottom: none;
+    display: block;
+}
+
+section#employment-history h3:first-of-type {
+    margin-top: 20px;
+}
+
+section#employment-history h4 {
+    background: var(--section-bg-blue);
+    padding: 8px 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* Date ranges - styled */
+section#employment-history em,
+section#education em {
+    color: var(--accent-blue);
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Education section */
+section#education h3 {
+    background: var(--section-bg-blue);
+    padding: 12px 20px;
+    border-radius: 8px;
+    border-bottom: none;
+    display: block;
+}
+
+/* Print optimizations */
+@media print {
+    body {
+        font-size: 11pt;
+    }
+
+    #main-wrapper {
+        padding: 0;
+        box-shadow: none;
+    }
+
+    h2 {
+        font-size: 18pt;
+        page-break-after: avoid;
+    }
+
+    h3 {
+        font-size: 14pt;
+        page-break-after: avoid;
+    }
+
+    a {
+        color: inherit;
+        border-bottom: none;
+    }
+
+    section#skills ul,
+    section#technical-skills ul,
+    section#core-competencies ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    section#skills ul li,
+    section#technical-skills ul li,
+    section#core-competencies ul li {
+        padding: 8px 12px;
+        font-size: 10pt;
+    }
+
+    section#employment-history,
+    section#education {
+        page-break-before: auto;
+    }
+
+    /* Ensure colors print */
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #main-wrapper > *:not(section#gerard-braad) {
+        padding: 0 20px;
+    }
+
+    section#gerard-braad {
+        padding: 30px 20px;
+    }
+
+    section#gerard-braad h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    section#skills ul,
+    section#technical-skills ul,
+    section#core-competencies ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Add some spacing at the bottom */
+#main-wrapper > section:last-child {
+    padding-bottom: 40px;
+}
+
+@media print {
+    #main-wrapper > section:last-child {
+        padding-bottom: 20px;
+    }
+}
+
+/* Contact info icons (if you want to add them later) */
+section#gerard-braad p a:before {
+    margin-right: 5px;
+}
+    </style>
+</head>
+<body>
+    <div id="main-wrapper">
+$body$
+    </div>
+</body>
+</html>
